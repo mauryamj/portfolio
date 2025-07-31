@@ -12,8 +12,8 @@ function About() {
         <>
         <h1 className='flex justify-center text-5xl font-bold pt-40 pb-2'>About Me</h1>
         <p className='flex justify-center text-1xl font-thin'>know more about me and Discover my journey</p>
-        <div className='flex'>
-            <img src ='/logo2.svg' className='pl-40 h-96 hidden md:block'/>
+        <div className='flex md:pl-20'>
+            <img src ='/logo2.svg' className='pl-40 h-96 hidden xl:block'/>
             <div className=' pt-20 md:pr-40 pl-5 md:pl-0 md:pb-10 md:flex md:w-screen justify-end'>
                 
                 <div className='md:flex-0'>
@@ -43,7 +43,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className='pt-5'><button className='rounded-md bg-white text-black p-2 border border-black' onClick={handleDownload}>Download Resume</button></div>
+                    <div className='pt-5'><button className='rounded-md bg-white text-black p-2 border border-black hover:bg-black hover:text-white hover:border-black active:bg-blue-900 active:text-white' onClick={handleDownload}>Download Resume</button></div>
                 </div>
             </div>
             

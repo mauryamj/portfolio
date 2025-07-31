@@ -5,14 +5,18 @@ import About from'./Sections/about'
 import Projects from'./Sections/projects'
 import Skills from'./Sections/skills'
 import Contact from'./Sections/contact'
-import { FaGithub, FaLinkedin, FaRProject, FaSuitcase } from 'react-icons/fa';
-import { FaThreads } from 'react-icons/fa6';
+
 
 function App() {
-
+const [visible,setVisible]= useState(false);
+useEffect(() => {
+    setVisible(true);
+  }, []);
   return (
     <>
-    <div className='overflow-x-hidden'>
+    <div className={` overflow-x-hidden transition-opacity duration-1000 ease-in-out ${
+        visible ? 'opacity-100' : 'opacity-0'
+      }`}>
       <Home />
       <About/>
       <Projects/>
