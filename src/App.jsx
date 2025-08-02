@@ -5,21 +5,15 @@ import About from'./Sections/about'
 import Projects from'./Sections/projects'
 import Skills from'./Sections/skills'
 import Contact from'./Sections/contact'
-
-
+import Certificates from './Sections/certificate';
 function App() {
-const [visible,setVisible]= useState(false);
-useEffect(() => {
-    setVisible(true);
-  }, []);
   return (
     <>
-    <div className={` overflow-x-hidden transition-opacity duration-1000 ease-in-out ${
-        visible ? 'opacity-100' : 'opacity-0'
-      }`}>
-      <Home />
+    <div>
+      <Home/>
       <About/>
       <Projects/>
+      <Certificates/>
       <Skills/>
       <Contact/>
       </div>
