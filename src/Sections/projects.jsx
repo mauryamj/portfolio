@@ -5,28 +5,25 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 function Projects() {
     const ref = useRef(null);
-    const isVisible = useInView(ref, { amount: 0.1, once: false })
+    const isVisible = useInView(ref, { amount: 0.1, once: true })
     return (
         <>
             <motion.h1
                 ref={ref}
                 initial={{ opacity: 0, y: -50 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
-                exit={{ opacity: 0, y: 50 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className='flex justify-center text-5xl font-bold pt-40 pb-2' id='ps'>Projects</motion.h1>
             <motion.p
                 ref={ref}
                 initial={{ opacity: 0, y: 50 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                exit={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className='flex justify-center text-1xl font-thin'>See what I Do, am Doing and can DO</motion.p>
             <motion.div
                 ref={ref}
                 initial={{ opacity: 0, x: 50 }}
                 animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-                exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className='xl:pl-40 md:pl-20 pl-5 xl:pr-40 pt-20  pb-10 xl:flex gap-10'>
                 <div>

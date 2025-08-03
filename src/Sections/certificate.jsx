@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 function Certificates() {
     const ref = useRef(null);
-    const isVisible = useInView(ref, { amount: 0.1, once: false })
+    const isVisible = useInView(ref, { amount: 0.1, once: true })
     return (
         <>
             <motion.h1
@@ -28,7 +28,7 @@ function Certificates() {
                 animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 exit={{ opacity: 0, x: 50 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className='xl:pl-40 md:pl-20 pl-5 xl:pr-40 pt-20  pb-10 xl:flex gap-10'>
+                className='xl:pl-40 md:pl-20 pl-5 xl:pr-40 pt-20  pb-10 flex gap-10'>
                 <div>
                     <h1 className='text-2xl font-bold'>Responsive Web Design</h1>
                     <h3 className='text-1xl font-semibold'>FreeCodeCamp</h3>

@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 function Skills() {
     const ref = useRef(null);
-    const isVisible = useInView(ref, { amount: 0.1, once: false })
+    const isVisible = useInView(ref, { amount: 0.1, once: true })
     return (
         <>
             <motion.h1

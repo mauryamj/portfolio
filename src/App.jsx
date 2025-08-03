@@ -9,7 +9,7 @@ import Certificates from './Sections/certificate';
 function App() {
   return (
     <>
-    <div>
+    <div className=''>
       <Home/>
       <About/>
       <Projects/>
