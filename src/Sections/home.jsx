@@ -10,7 +10,7 @@ function Home() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/Resume.pdf';
-    link.download = 'Abhishek_Resume_FroentendDeveloper.pdf';
+    link.download = 'Abhishek_Resume.pdf';
     link.click();
   }
   return (
@@ -46,14 +46,14 @@ function Home() {
             <span
             >
               <Typewriter
-                words={['Frontend', 'Full-Stack', 'Web', 'MERN']}
+                words={['Frontend Developer', 'Data Analyst','Python Developer']}
                 loop={0}
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
               />
-            </span>{' '}
-            Developer
+            </span>{'|'}
+            
           </motion.h6>
 
           <motion.p
@@ -62,7 +62,7 @@ function Home() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className='pt-6 text-sm md:text-base font-semibold md:max-w-md max-w-xs'>I build modern ,responsive web design with clean UI and smooth UX with a clean code to create experience that feel intuitive ,fast and delightful to use. </motion.p>
+            className='pt-6 text-sm md:text-base font-semibold md:max-w-md max-w-xs'>I design and develop clean, responsive UIs with smooth UX. I enjoy building full-stack apps, automating with Python, and extracting insights from data to drive better decisions.</motion.p>
           <motion.div
            
             initial={{ opacity: 0, x: 50 }}

@@ -7,7 +7,7 @@ function About() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = '/Resume.pdf';
-        link.download = 'Abhishek_Resume_FroentendDeveloper.pdf';
+        link.download = 'Abhishek_Resume.pdf';
         link.click();
     }
     const ref = useRef(null);
@@ -49,11 +49,11 @@ function About() {
                         className='md:pt-6 md:flex  gap-10 items-center'>
                             <div>
                                 <h1 className=' flex gap-1 text-2xl font-bold'><div className='bg-gray-900 text-white h-9 w-9 text-base rounded-xl border p-2'><FaSearch /></div>Who am I</h1>
-                                <p className='max-w-xs'>I am a Frontend Developer who crafts responsive,interactive and clean UI.with Certification on Responsive web developer</p>
+                                <p className='max-w-xs'>I’m a curious developer who started with frontend design and now loves exploring full-stack, Python, and data-driven development. I enjoy building things that are both useful and meaningful.</p>
                             </div>
                             <div className='pt-5 md:pt-0'>
                                 <h1 className='flex gap-1 text-2xl font-bold'><div className='bg-gray-900 text-white h-9 w-9 text-base rounded-xl border p-2'><FaLightbulb /></div>My Approach</h1>
-                                <p className='max-w-xs'>I focus on user centered design with the minset and point on view throught customer</p>
+                                <p className='max-w-xs'>I focus on how real people use tech — designing with empathy, coding with clarity, and always aiming to create smooth, thoughtful experiences.</p>
                             </div>
 
 

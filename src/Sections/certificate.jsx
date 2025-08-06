@@ -46,7 +46,7 @@ function Certificates() {
 
                     </div>
                     <div className='flex items-center gap-4 xl:pl-36 pl-7'>
-                        <div className='pl-5 '><button className='rounded-3xl bg-white text-black px-6 py-2 border border-black hover:bg-black hover:text-white hover:border-black active:bg-blue-900 active:text-white flex gap-1' onClick={() => (window.location.href = 'https://www.freecodecamp.org/certification/mauryamj/responsive-web-design')}>Show credential<FaExternalLinkAlt/></button></div>
+                        <div className='pl-5 '><button className='rounded-3xl bg-white text-black px-6 py-2 border border-black hover:bg-black hover:text-white hover:border-black active:bg-blue-900 active:text-white flex gap-1' onClick={() => (window.location.href = 'https://drive.google.com/file/d/10YPOeTzhLmngDfvherJVgdI-fVVQDHYp/view?usp=sharing')}>Show credential<FaExternalLinkAlt/></button></div>
                     </div>
                 </div>
 
